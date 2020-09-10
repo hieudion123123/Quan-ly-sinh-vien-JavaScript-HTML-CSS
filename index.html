@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container"> 
+        <form id="form-sinh-vien">
+            <div class="row">
+              <div class="col">
+                <input type="text" id="ma-sinh-vien" class="form-control" placeholder="Mã sinh viên" required>
+              </div>
+              <div class="col">
+                <input type="text" id="ho-va-ten" class="form-control" placeholder="Họ và tên" required>
+              </div>
+              <div class="col">
+                <input type="email" id="email" class="form-control" placeholder="Email" required>
+              </div>
+              <button class="submitBtn btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+		<h2>Danh Sách Sinh Viên</h2>
+		<p> </p>
+    <table id="danh-sach-sinh-vien" class="table">
+		<thead>
+			<tr>
+            <th>Mã sinh viên</th>
+            <th>Họ và tên</th>
+            <th>Email</th>
+            <th></th>
+		  </tr>
+    </thead>
+    <tbody id="tbodySinhVien">
+      <tr>
+    <td></td>
+      </tr>      
+    </tbody>
+    </table>
+    </div> 
+    <script src="main.js"></script>
+    <script src="SinhVien.js"></script>
+</body>
+</html>
