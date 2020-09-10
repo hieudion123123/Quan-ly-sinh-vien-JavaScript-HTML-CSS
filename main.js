@@ -14,9 +14,9 @@ class Control {
     <td id="masinhvien${tableLength}">${masinhvien}</td>
     <td id="hovaten${tableLength}">${hovaten}</td>
     <td id="email${tableLength}">${email}</td>
-    <td><button type="submit" id="sua${tableLength}">Edit</button>
-     <button type="submit" id="xoa${tableLength}">Delete</button>
-     <button type="submit" id="luu${tableLength}">Save</button></td>
+    <td><button class="btn btn-primary" type="submit" id="sua${tableLength}">Edit</button>
+     <button class="btn btn-danger" type="submit" id="xoa${tableLength}">Delete</button>
+     <button class="btn btn-primary" id="luu${tableLength}">Save</button></td>
      </tr>
      `;
     this.delete(tableLength);
@@ -56,6 +56,7 @@ class Control {
     email.innerHTML = `<input type="text" id="emailMoi${tableLength}" value="${emailCu}">`;
     
     document.getElementById("sua"+tableLength).style.display = 'none';
+    document.getElementById("xoa"+tableLength).style.display = 'none';
     document.getElementById("luu"+tableLength).style.display = 'inline-block';
 })
 }
